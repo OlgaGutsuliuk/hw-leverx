@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Store</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/27affdde6a.js"></script>
+  </head>
+  <body>
+    <div class="flex-container">
+        <aside class="sitebar-menu">
+            <ul class="sitebar-menu__list">
+                <li class="search sitebar-menu__loupe">
+                    <p>Stores list</p>
+                    <div class="sitebar-menu__input">
+                        <input placeholder="Search" />
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button>
+                            <i class="fas fa-sync"></i>
+                        </button>
+                    </div>
+                </li>
+                <li class="control-buttons">
+                    <div class="pin-up">
+                        <button>
+                            <i class="fas fa-angle-up"></i>
+                        </button>
+                        <button>
+                            <i class="fas fa-thumbtack"></i>
+                        </button>
+                    </div>
+                </li>
+    
+                <li>
+                    <table>
+                        <tr>
+                            <th>Funk - Daniel</th>
+                            <th>5098</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">
+                                AL, Port, 6357 Macejkovic Crossing
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Schiller - West</th>
+                            <th>8082</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">MA, New, 3002 Daugherty Park</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Schumm</th>
+                            <th>6952</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">GA, New, 30506 Bogisich Club</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Thompson and Batz</th>
+                            <th>8419</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">WA, Lake, 376 Al Terrace</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Stiedemann Inc</th>
+                            <th>7519</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">IA, New, 0314 Anderson Valley</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Kuphal - Hoppe</th>
+                            <th>3473</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">TX, South, 4680 Maggio Vista</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>O&lsquo;Reilly - Cormier</th>
+                            <th>3789</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">CT, South, 95111 Martine Falls</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Bergstrom - Hyatt</th>
+                            <th>2199</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">MI, Lake, 223 Joesph Shore</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Berge - Grimes</th>
+                            <th>3475</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">GA, Lake, 28540 Al Vista</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <th>Berge - Grimes</th>
+                            <th>3475</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="measure-unit">sq.m</td>
+                        </tr>
+                        <tr>
+                            <td class="store-location">GA, Lake, 28540 Al Vista</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+    
+            <div class="bottom-menu create">
+                <button>
+                    <i class="fas fa-plus"></i>
+                    <span>Create</span>
+                </button>
+            </div>
+        </aside>
+        <div class="main-container">
+            <header class="header-page fixed">
+                <p class="header-page__title">Store Details</p>
+            </header>
+            <div class="search store-details" >
+                <div class="store-details-table">
+                    <div class='store-details__email'>
+                        <p><b>Email:</b> Lucienne_Emard16@yahoo.com</p>
+                        <p><b>Phone Number:</b> 650.029.9794 x6382</p>
+                        <p><b>Address:</b> MA, New, 3002 Daugherty Park</p>
+                    </div>
+                    <div class="store-details__area">
+                        <p><b>Established Date:</b> Dec 20, 2018</p>
+                        <p><b>Floor Area:</b> 8082</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="control-buttons">
+                    <div class="pin-up">
+                        <button>
+                            <i class="fas fa-angle-up"></i>
+                        </button>
+                        <button>
+                            <i class="fas fa-thumbtack"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="amount-of-products">
+                    <div class="amount-all">
+                        <span>100</span>
+                        <span>All</span>
+                    </div>
+    
+                    <div class="horizontal-line"></div>
+    
+                    <div class="button-ok">
+                        <div class="amount-of-products__wrapper">
+                            <button>
+                                <i class="far fa-check-square fa-lg"></i>
+                            </button>
+                            <p>Ok</p>
+                            <span class="amount-all_span">50</span>
+                        </div>
+                    </div>
+    
+                    <div class="button-storage">
+                        <div class="amount-of-products__wrapper">
+                            <button>
+                                <i class="fas fa-exclamation-triangle fa-lg"></i>
+                            </button>
+                            <p>Storage</p>
+                            <span class="amount-all_span">30</span>
+                        </div>
+                    </div>
+                    <div class="button-out-of-stock">
+                        <div class="amount-of-products__wrapper">
+                            <button>
+                                <i class="fas fa-exclamation-circle fa-lg"></i>
+                            </button>
+                            <p>Out of stock</p>
+                            <span class="amount-all_span">20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <section>
+            <table class=" wide products-table">
+                <tr class="table-header">
+                    <td class="header-name">Products</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="table-header">
+                    <td>Name</td>
+                    <td class="product-price">Price</td>
+                    <td>Specs</td>
+                    <td>Supplier Info</td>
+                    <td>Country of origin</td>
+                    <td>Prod. company</td>
+                    <td>Rating</td>
+                    <td></td>
+                </tr>
+                <tr class="table-product">
+                    <td>
+                        <b class="break">Refined Concrete Chicken</b>
+                        <br /><br />
+                        1
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td class="ellipsis">Quisque in finibus metus.</td>
+                    <td class="ellipsis">Praesent ultrices, mi mollis.</td>
+                    <td class="ellipsis">Denmark</td>
+                    <td class="ellipsis">Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+                <tr class="table-product">
+                    <td>
+                        <b class="break">Refined Concrete Chicken</b>
+                        <br /><br />
+                        2
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td class="ellipsis">Quisque in finibus metus.</td>
+                    <td class="ellipsis">Praesent ultrices, mi mollis.</td>
+                    <td class="ellipsis">Denmark</td>
+                    <td class="ellipsis">Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b class="break">Refined Concrete Chicken</b>
+                        <br /><br />
+                        3
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td class="ellipsis">Quisque in finibus metus.</td>
+                    <td class="ellipsis">Praesent ultrices, mi mollis.</td>
+                    <td class="ellipsis">Denmark</td>
+                    <td class="ellipsis">Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+                <tr class="table-product">
+                    <td>
+                        <b class="break">Refined Concrete Chicken</b>
+                        <br /><br />
+                        4
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td class="ellipsis">Quisque in finibus metus.</td>
+                    <td class="ellipsis">Praesent ultrices, mi mollis.</td>
+                    <td class="ellipsis">Denmark</td>
+                    <td class="ellipsis">Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        5
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        6
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        7
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        8
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        9
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        10
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        11
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        12
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+    
+                <tr class="table-product">
+                    <td>
+                        <b>Refined Concrete Chicken</b>
+                        <br /><br />
+                        13
+                    </td>
+                    <td class="product-price"><b>9 255</b> USD</td>
+                    <td>Quisque in finibus metus.</td>
+                    <td>Praesent ultrices, mi mollis.</td>
+                    <td>Denmark</td>
+                    <td>Ortiz, Mante and Hermiston</td>
+                    <td class="product-rating">
+                        <span class="star-full">&starf;</span>&star;&star;&star;&star;
+                    </td>
+                    <td>&gt;</td>
+                </tr>
+            </table>
+        </section>
+        </main>
+            <footer class="bottom-menu right">
+                <button>
+                    <i class="fas fa-plus"></i>
+                    <span>Create</span>
+                </button>
+                <button>
+                    <i class="far fa-trash-alt"></i>
+                    <span>Delete</span>
+                </button>
+            </footer>
+        </div>
+    </div>
+  </body>
+</html>
